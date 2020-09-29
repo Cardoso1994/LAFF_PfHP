@@ -39,7 +39,13 @@ output_IJP
 % between the two implementations, due to round-off error and the order in which 
 % computations are performed.
 
+
+
+
 assert( max(abs(data(:,6))) < 1.0e-10, 'Hmmm, better check if there is an accuracy problem');
+
+
+
 %% Plot the timing data.
 % A first graph shows the execution time of the implementation in Gemm_IJP.m 
 % for various matrix sizes $m = n = k$.
@@ -77,14 +83,18 @@ set( legend1, 'Location', 'northwest', 'FontSize', 18) ;
 
 % Uncomment if you want to create a pdf for the graph
 % print( 'Plot_IJP_Timing.pdf', '-dpdf' );
+
+
+
+
 %% Plotting performance (rate of computation)
 % We will often examine the rate at which Gemm_IJP.c  compute rather than the 
 % time required for completing the computation.
-% 
+%
 % * When all matrices are $n \times n$, we know that a matrix-matrix  multiplication$ 
-% A B + C$ requires $2n^3$ floating point operations (flops).  
+% A B + C$ requires $2n^3$ floating point operations (flops).
 % * This means that the number of operations performed per second is given by 
-% ${2 n^3}/{t}$ flops, where $t$ is the time, in seconds, for computing the multiplication.  
+% ${2 n^3}/{t}$ flops, where $t$ is the time, in seconds, for computing the multiplication.
 % * Now, a typical current core can perform billions of flops per second, so 
 % instead we report performance in GFLOPS. (billions of flops per second): ${2 
 % n^3}/{t} \times 10^{-9}$.  This is reported computed in the third (for the reference 
