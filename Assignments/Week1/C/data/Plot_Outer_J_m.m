@@ -99,6 +99,28 @@ if ( 0 )
         'Marker', 'o', 'LineStyle', '--', 'Color', plot_colors( 7,: ) );
 end
 
+
+%% Homework 1.3.6.2 of the corresponding book
+% comparison between JIP (dot product Matrix-Matrix multiplication) and
+% JPI (axpy Matrix-Matrix multiplication)
+if (1)
+   output_J_Gemv_J_Axpy
+  assert( max(abs(data(:,6))) < 1.0e-10, ...
+      'Hmmm, better check if there is an accuracy problem');
+  plot( data(:,1), data(:,5), 'DisplayName', 'J\Gemv\J\Axpy', ...
+      'MarkerSize', 8, 'LineWidth', 2, ...
+      'Marker', 'o', 'LineStyle', '--', 'Color', plot_colors( 5,: ) );
+end
+
+if (1)
+   output_J_Gemv_I_Dots
+   assert( max(abs(data(:,6))) < 1.0e-10, ...
+      'Hmmm, better check if there is an accuracy problem');
+   plot( data(:,1), data(:,5), 'DisplayName', 'J\Gemv\I\Dots',...
+      'MarkerSize', 8, 'LineWidth', 2, ...
+        'Marker', 'o', 'LineStyle', '--', 'Color', plot_colors( 1,: ) );
+end
+
 legend2 = legend( axes2, 'show' );
 set( legend2, 'Location', 'southeast', 'FontSize', 18) ;
 
