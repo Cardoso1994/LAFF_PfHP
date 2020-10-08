@@ -3,11 +3,10 @@
 #define psi(i)  y[(i) * incy]         // map psi( i )  to array y
 
 void Axpy( int, double, double *, int, double *, int );
-void Axpy( int n, double alpha, double *x, int incx, double *y, int incy )
 
 void MyGer( int m, int n, double *x, int incx,
 		double *y, int incy, double *A, int ldA )
 {
   for ( int j=0; j<n; j++ )
-    Axpy(m, y + j * incy, x, incx, A + j * ldA, 1);
+    Axpy(m, *(y + j * incy), x, incx, A + j * ldA, 1);
 }
