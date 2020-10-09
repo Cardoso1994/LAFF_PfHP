@@ -13,5 +13,6 @@ http://ulaff.net.
 ## Own work
 This is my own work during the course **LAFF-On_PfHP**. The code contains
 only the modifications needed in order to do the homework exercises.
-The jupyter notebooks are only my personal notes, all rights go to the course
-staff.
+The jupyter notebooks are only my personal notes, and are totally based on
+the distributed PreText book linked above.
+All rights go to the course staff.
