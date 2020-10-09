@@ -47,7 +47,7 @@ ylabel( 'GFLOPS', 'FontName', 'Helvetica Neue' );
 xlabel( 'matrix dimension m=n=k', 'FontName', 'Helvetica Neue' );
 box(axes2,'on');
 set( axes2, 'FontName', 'Helvetica Neue', 'FontSize', 18);
-             
+
 % Plot time data for PJI  
 output_PJI   % load data for PJI ordering
 assert( max(abs(data(:,6))) < 1.0e-10, ...
@@ -56,7 +56,7 @@ plot( data(:,1), data(:,5), 'DisplayName', 'PJI', 'MarkerSize', 8, 'LineWidth', 
       'Marker', 'o', 'LineStyle', '-.', 'Color', plot_colors( 2,: ) );
 
 % Plot time data for P_Ger_I_Axpy  (to plot change "0" to "1")
-if ( 0 ) 
+if ( 1 ) 
   output_P_Ger_I_Axpy  
   assert( max(abs(data(:,6))) < 1.0e-10, ...
       'Hmmm, better check if there is an accuracy problem');
@@ -65,7 +65,7 @@ if ( 0 )
 end
 
 % Plot time data for P_Ger_J_Axpy  (to plot change "0" to "1")
-if ( 0 ) 
+if ( 1 ) 
   output_P_Ger_J_Axpy
   assert( max(abs(data(:,6))) < 1.0e-10, ...
       'Hmmm, better check if there is an accuracy problem');
