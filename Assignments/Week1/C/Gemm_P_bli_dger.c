@@ -13,6 +13,6 @@ void MyGemm(int m, int n, int k, double *A, int ldA,
 	{
 		double d_one=1.0;
 		bli_dger( BLIS_NO_CONJUGATE, BLIS_NO_CONJUGATE, m, n,
-&d_one, &alpha( 0, p ), 1, &beta( p,0 ), ldB, C, 1, ldC );
+				&d_one, &alpha( 0, p ), 1, &beta( p,0 ), ldB, C, 1, ldC );
 	}
 }
