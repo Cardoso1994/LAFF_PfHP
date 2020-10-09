@@ -55,7 +55,7 @@ plot( data(:,1), data(:,5), 'DisplayName', 'JPI', 'MarkerSize', 8, 'LineWidth', 
       'Marker', 'o', 'LineStyle', '-.', 'Color', plot_colors( 2,: ) );
 
 % Plot time data for JP_Axpy  (to plot change "0" to "1")
-if ( 0 ) 
+if ( 1 ) 
   output_J_Gemv_J_Axpy  
   assert( max(abs(data(:,6))) < 1.0e-10, ...
       'Hmmm, better check if there is an accuracy problem');
@@ -64,7 +64,7 @@ if ( 0 )
 end
 
 % Plot time data for JIP  (to plot change "0" to "1")
-if ( 0 ) 
+if ( 1 ) 
   output_JIP
   assert( max(abs(data(:,6))) < 1.0e-10, ...
       'Hmmm, better check if there is an accuracy problem');
@@ -73,7 +73,7 @@ if ( 0 )
 end
 
 % Plot time data for J_Gemv_I_Dots  (to plot change "0" to "1")
-if ( 0 ) 
+if ( 1 ) 
   output_J_Gemv_I_Dots
   assert( max(abs(data(:,6))) < 1.0e-10, ...
       'Hmmm, better check if there is an accuracy problem');
@@ -82,7 +82,7 @@ if ( 0 )
 end
 
 % Plot time data for J_dgemv  (to plot change "0" to "1")
-if ( 0 ) 
+if ( 1 )
   output_J_dgemv
   assert( max(abs(data(:,6))) < 1.0e-10, ...
       'Hmmm, better check if there is an accuracy problem');
@@ -91,7 +91,7 @@ if ( 0 )
 end
 
 % Plot time data for J_bli_dgemv  (to plot change "0" to "1")
-if ( 0 ) 
+if ( 1 ) 
   output_J_bli_dgemv 
   assert( max(abs(data(:,6))) < 1.0e-10, ...
       'Hmmm, better check if there is an accuracy problem');
