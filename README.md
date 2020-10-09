@@ -11,4 +11,7 @@ That PreTeXt generated book will eventually be distributed via
 http://ulaff.net.
 
 ## Own work
-Own work of LAFF Programming for High Performance Course
+This is my own work during the course **LAFF-On_PfHP**. The code contains
+only the modifications needed in order to do the homework exercises.
+The jupyter notebooks are only my personal notes, all rights go to the course
+staff.
