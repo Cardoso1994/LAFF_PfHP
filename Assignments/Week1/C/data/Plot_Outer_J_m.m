@@ -56,7 +56,7 @@ plot( data(:,1), data(:,5), 'DisplayName', 'JPI', 'MarkerSize', 8, 'LineWidth', 
 
 % Plot time data for JP_Axpy  (to plot change "0" to "1")
 if ( 1 ) 
-  output_J_Gemv_J_Axpy  
+  output_J_Gemv_J_Axpy
   assert( max(abs(data(:,6))) < 1.0e-10, ...
       'Hmmm, better check if there is an accuracy problem');
   plot( data(:,1), data(:,5), 'DisplayName', 'J\_Gemv\_J\_Axpy ', 'MarkerSize', 8, 'LineWidth', 2, ...
