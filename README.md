@@ -16,3 +16,6 @@ only the modifications needed in order to do the homework exercises.
 The jupyter notebooks are only my personal notes, and are totally based on
 the distributed PreText book linked above.
 All rights go to the course staff.
+
+## Notebooks
+[Week 1](./Assignments/Week1/notebooks)
