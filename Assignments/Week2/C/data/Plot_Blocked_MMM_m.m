@@ -77,7 +77,7 @@ v = axis;                   % extract the current ranges
 axis( [ 0 v(2) 0 v(4) ] )   % start the x axis and y axis at zero
 
 % Optionally change the top of the graph to capture the theoretical peak
-if ( 0 )
+if ( 1 )
     turbo_clock_rate = 4.3;
     flops_per_cycle = 16;
     peak_gflops = turbo_clock_rate * flops_per_cycle;
